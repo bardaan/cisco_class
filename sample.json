@@ -1,0 +1,62 @@
+
+{
+	"device_list":
+	{
+		"device":
+			{
+				"1":			
+					{
+						"mgmt_ip": "172.16.32.35",
+						"ospf_router_id": "172.16.32.35",
+						"ospf_process_id": "10",
+						"intf_details":
+							{
+								"1":
+									{
+										"name": "Eth1/1",
+										"ip_prefix": "10.10.10.1/24",
+										"description": "Connectivity to N9K2 Eth1/1",
+										"ospf_area": "0"
+									},
+								"2":
+									{
+										"name": "Vlan999",
+										"ip_prefix": "10.10.1.1/24",
+										"description": "SERVER VLAN",
+										"ospf_area": "1"
+									},
+								"3":
+									{
+										"name": "Vlan998",
+										"ip_prefix": "10.10.2.1/24",
+										"description": "SERVER VLAN",
+										"ospf_area": "1"
+									}
+							}
+					},	
+				"2":
+					{
+						"mgmt_ip": "172.16.32.36",
+						"ospf_router_id": "172.16.32.36",
+						"ospf_process_id": "10",
+						"intf_details":
+							{
+								"1":
+									{
+										"name": "Loopback109",
+										"ip_prefix": "109.1.1.1/32",
+										"description": "SOURCE FOR GRE TUNNEL TO DR",
+										"ospf_area": "2"
+									},
+								"2":
+									{
+										"name": "Eth1/1",
+										"ip_prefix": "10.10.10.2/24",
+										"description": "Connectivity to N9K1 Eth1/1",
+										"ospf_area": "0"
+									}
+							}		
+					}
+			}			
+	}
+}
